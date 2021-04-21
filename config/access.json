@@ -1,0 +1,40 @@
+{
+  "sites":[
+    {
+      "site": "",
+      "access": "public",
+      "role": ""
+    },
+    {
+      "site": "signup",
+      "access": "public",
+      "role": ""
+    },
+    {
+      "site": "dashboard",
+      "access": "private",
+      "role": "Estudiante"
+    },
+    {
+      "site": "dashboard",
+      "access": "private",
+      "role": "Egresado"
+    },
+    {
+      "site": "dashboard",
+      "access": "private",
+      "role": "Docente"
+    },
+    {
+      "site": "dashboard",
+      "access": "private",
+      "role": "Root"
+    }
+  ],
+  "default-sites":{
+    "Estudiante": "dashboard",
+    "Egresado": "dashboard",
+    "Docente": "dashboard",
+    "Root": "dashboard"
+  }
+}

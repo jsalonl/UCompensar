@@ -1,36 +1,151 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-default">
+	<div class="container-fluid px-0">
+		<a class="navbar-brand" href="./"><img src="views/assets/images/brand/logo/logo.jpg" width="250px" alt=""/></a>
+		<!-- Mobile view nav wrap -->
+		<ul
+			class="navbar-nav navbar-right-wrap ml-auto d-lg-none d-flex nav-top-wrap"
+		>
 
-    <div class="container-scroller">
-      <!-- partial:partials/_navbar.html -->
-      <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-        <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
-          <a class="navbar-brand brand-logo" href="./">
-            <img src="views/assets/images/logo.jpg" alt="logo" /> </a>
-          <a class="navbar-brand brand-logo-mini" href="./">
-            <img src="views/assets/images/logo-mini.svg" alt="logo" /> </a>
-        </div>
-        <div class="navbar-menu-wrapper d-flex align-items-center">
-          <ul class="navbar-nav">
-            <li class="nav-item font-weight-semibold d-none d-lg-block"></li>
-          </ul>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown d-none d-xl-inline-block user-dropdown">
-              <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-                <img class="img-xs rounded-circle" src="views/assets/images/faces/face8.jpg" alt="Profile image"> </a>
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
-                <div class="dropdown-header text-center">
-                  <img class="img-md rounded-circle" src="views/assets/images/faces/face8.jpg" alt="Profile image">
-                  <p class="mb-1 mt-3 font-weight-semibold"><?php echo $user->getNombre(); ?></p>
-                  <p class="font-weight-light text-muted mb-0"><?php echo $user->getCorreo();?></p>
-                </div>
-                <a href="#" class="dropdown-item">Mi Perfil</a>
-                <a href="#" class="dropdown-item">Mi Historico<i class="dropdown-item-icon ti-location-arrow"></i></a>
-                <a href="<?php echo constant('URL'); ?>/logout" class="dropdown-item">Cerrar sesión<i class="dropdown-item-icon ti-power-off"></i></a>
-              </div>
-            </li>
-          </ul>
-          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
-            <span class="mdi mdi-menu"></span>
-          </button>
-        </div>
-      </nav>
-      <!-- partial -->
+			<li class="dropdown ml-2">
+				<a
+					class="rounded-circle"
+					href="#!"
+					role="button"
+					id="dropdownUser"
+					data-toggle="dropdown"
+					aria-haspopup="true"
+					aria-expanded="false"
+				>
+					<div class="avatar avatar-md avatar-indicators avatar-online">
+						<img
+							alt="avatar"
+							src="views/assets/images/avatar/avatar-1.jpg"
+							class="rounded-circle"
+						/>
+					</div>
+				</a>
+				<div
+					class="dropdown-menu dropdown-menu-right shadow"
+					aria-labelledby="dropdownUser"
+				>
+					<div class="dropdown-item">
+						<div class="d-flex">
+							<div class="avatar avatar-md avatar-indicators avatar-online">
+								<img
+									alt="avatar"
+									src="views/assets/images/avatar/avatar-1.jpg"
+									class="rounded-circle"
+								/>
+							</div>
+							<div class="ml-3 lh-1">
+								<h5 class="mb-1"><?php echo $user->getNombre(); ?></h5>
+								<p class="mb-0 text-muted"><?php echo $user->getCorreo(); ?></p>
+							</div>
+						</div>
+					</div>
+					<div class="dropdown-divider"></div>
+					<ul class="list-unstyled">
+						<li>
+							<a class="dropdown-item" href="./profile">
+								<i class="fe fe-user mr-2"></i>Perfil
+							</a>
+						</li>
+					</ul>
+					<div class="dropdown-divider"></div>
+					<ul class="list-unstyled">
+						<li>
+							<a class="dropdown-item" href="./logout">
+								<i class="fe fe-power mr-2"></i>Salir
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<!-- Button -->
+		<button
+			class="navbar-toggler collapsed"
+			type="button"
+			data-toggle="collapse"
+			data-target="#navbar-default"
+			aria-controls="navbar-default"
+			aria-expanded="false"
+			aria-label="Toggle navigation"
+		>
+			<span class="icon-bar top-bar mt-0"></span>
+			<span class="icon-bar middle-bar"></span>
+			<span class="icon-bar bottom-bar"></span>
+		</button>
+		<!-- Collapse -->
+		<div class="collapse navbar-collapse" id="navbar-default">
+			<form style="width:100%" class="mt-3 mt-lg-0 ml-lg-3 d-flex align-items-center">
+				<span class="position-absolute pl-3 search-icon">
+					<i class="fe fe-search"></i>
+				</span>
+				<input
+					type="search"
+					class="form-control pl-6"
+					placeholder="Buscar"
+				/>
+			</form>
+			<ul class="navbar-nav navbar-right-wrap ml-auto d-none d-lg-block">
+				<li class="dropdown ml-2 d-inline-block">
+					<a
+						class="rounded-circle"
+						href="#!"
+						role="button"
+						id="dropdownUserProfile"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false"
+					>
+						<div class="avatar avatar-md avatar-indicators avatar-online">
+							<img
+								alt="avatar"
+								src="views/assets/images/avatar/avatar-1.jpg"
+								class="rounded-circle"
+							/>
+						</div>
+					</a>
+					<div
+						class="dropdown-menu dropdown-menu-right"
+						aria-labelledby="dropdownUserProfile"
+					>
+						<div class="dropdown-item">
+							<div class="d-flex">
+								<div class="avatar avatar-md avatar-indicators avatar-online">
+									<img
+										alt="avatar"
+										src="views/assets/images/avatar/avatar-1.jpg"
+										class="rounded-circle"
+									/>
+								</div>
+								<div class="ml-3 lh-1">
+									<h5 class="mb-1"><?php echo $user->getNombre();?></h5>
+									<p class="mb-0 text-muted"><?php echo $user->getCorreo();?></p>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown-divider"></div>
+						<ul class="list-unstyled">
+							<li>
+								<a class="dropdown-item" href="./profile">
+									<i class="fe fe-user mr-2"></i>Perfil
+								</a>
+							</li>
+						</ul>
+						<div class="dropdown-divider"></div>
+						<ul class="list-unstyled">
+							<li>
+								<a class="dropdown-item" href="./logout">
+									<i class="fe fe-power mr-2"></i>Salir
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>

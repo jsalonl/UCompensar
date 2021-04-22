@@ -2,97 +2,80 @@
     //Modulos Fijos Superiores
     include('views/head.php');
   ?>
- <div class="container-scroller">
-      <div class="container-fluid page-body-wrapper full-page-wrapper">
-        <div class="content-wrapper d-flex align-items-center auth auth-bg-1 theme-one">
-          <div class="row w-100">
-            <div class="col-lg-12 mx-auto">
-              <div class="auto-form-wrapper">
-                <div class="pb-5 mx-auto text-center">
-                  <img src="views/assets/images/logo.jpg" width="100%">
-                </div>
-                <?php $this->showMessages();?>
-                <!-- Formulario -->
-                <form action="<?php echo constant('URL');?>/signup/newUser" method="post">
-                  <div class="row">
-                  <div class="form-group col-md-6">
-                    <label for="identificacion">Identificacion</label>
-                    <div class="input-group">
-                      <input type="phone" name="identificacion" id="identificacion" class="form-control" required>
-                      <div class="input-group-append">
-                        <span class="input-group-text">
-                          <i class="mdi mdi-check-circle-outline"></i>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="nombre">Nombre</label>
-                    <div class="input-group">
-                      <input type="text" name="nombre" id="nombre" class="form-control" required>
-                      <div class="input-group-append">
-                        <span class="input-group-text">
-                          <i class="mdi mdi-check-circle-outline"></i>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="correo">Correo</label>
-                    <div class="input-group">
-                      <input type="email" name="correo" id="correo" class="form-control" required>
-                      <div class="input-group-append">
-                        <span class="input-group-text">
-                          <i class="mdi mdi-check-circle-outline"></i>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="telefono">Telefono</label>
-                    <div class="input-group">
-                      <input type="phone" name="telefono" id="telefono" class="form-control" required>
-                      <div class="input-group-append">
-                        <span class="input-group-text">
-                          <i class="mdi mdi-check-circle-outline"></i>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="password">Contraseña</label>
-                    <div class="input-group">
-                      <input type="password" name="password" id="password" class="form-control" required>
-                      <div class="input-group-append">
-                        <span class="input-group-text">
-                          <i class="mdi mdi-check-circle-outline"></i>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="form-group col-md-12">
-                    <button type="submit" class="btn btn-primary submit-btn btn-block">Registrarse</button>
-                  </div>
-                  <div class="text-block col-md-12 text-center my-3">
-                    <span class="font-weight-semibold">¿Ya es miembro?</span>
-                    <a href="<?php echo constant('URL')?>/login" class="text-primary">Inicie sesión</a>
-                  </div>
-                  </div>
-                </form>
-                <!-- Formulario -->
-              </div>
-              <p class="footer-text text-center">UCompensar &copy; <?php echo date('Y')?>. Todos los derechos reservados.</p>
-            </div>
-          </div>
-        </div>
-        <!-- content-wrapper ends -->
-      </div>
-      <!-- page-body-wrapper ends -->
-    </div>
-    <!-- container-scroller -->
-  
-  
-  <?php
+  <body class="bg-dark">
+	<!-- Page content -->
+	<div class="container d-flex flex-column">
+		<div class="row align-items-center justify-content-center no-gutters min-vh-100">
+			<div class="col-lg-5 col-md-8 py-8 py-xl-0">
+				<!-- Card -->
+				<div class="card shadow mt-4">
+					<!-- Card body -->
+					<div class="card-body p-6">
+            <?php $this->showMessages();?>
+						<div class="mb-4">
+							<a href="#"><img src="views/assets/images/brand/logo/logo.jpg" class="mb-4" alt="" /></a>
+							<h1 class="mb-1 font-weight-bold">Reg&iacute;strese</h1>
+							<span>Ya tiene cuenta?
+								<a href="./" class="ml-1">Inicie sesi&oacute;n</a></span>
+						</div>
+						<!-- Form -->
+						<form action="<?php echo constant('URL');?>/signup/newUser" method="post">
+              <!-- Vid -->
+							<div class="form-group">
+								<label for="identificacion" class="form-label">Identificaci&oacute;n</label>
+								<input type="tel" id="identificacion" class="form-control" name="identificacion" placeholder="Identificacion"
+									required />
+							</div>
+              <!-- Name -->
+							<div class="form-group">
+								<label for="nombre" class="form-label">Nombre Completo</label>
+								<input type="text" id="nombre" class="form-control" name="nombre" placeholder="Nombres y apellidos"
+									required />
+							</div>
+              <!-- Email -->
+							<div class="form-group">
+								<label for="correo" class="form-label">Correo</label>
+								<input type="correo" id="correo" class="form-control" name="correo" placeholder="Correo universitario"
+									required />
+							</div>
+              <!-- Vid -->
+							<div class="form-group">
+								<label for="telefono" class="form-label">Tel&eacute;fono</label>
+								<input type="tel" id="telefono" class="form-control" name="telefono" placeholder="N&uacute;mero de tel&eacute;fono o celular"
+									required />
+							</div>
+              <!-- Password -->
+							<div class="form-group">
+								<label for="password" class="form-label">Password</label>
+								<input type="password" id="password" class="form-control" name="password" placeholder="**************"
+									required />
+							</div>
+              <!-- Checkbox -->
+							<!--<div class="form-group">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="agreeCheck" />
+									<label class="custom-control-label" for="agreeCheck"><span>I agree to the <a href="terms-condition-page.html">Terms of
+												Service </a>and
+											<a href="terms-condition-page.html">Privacy Policy.</a></span></label>
+								</div>
+							</div>-->
+							<div>
+                <!-- Button -->
+								<button type="submit" class="btn btn-primary btn-block">
+									Crear cuenta
+								</button>
+							</div>
+							<hr class="my-4" />
+							<div class="mt-4 text-center">
+								<a href="https://ucompensar.edu.co" target="_blank">UCompensar&copy;</a> - Todos los derechos reservados
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<?php
   include('views/scripts.php');
-  ?>
+?>

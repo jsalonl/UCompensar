@@ -1,16 +1,18 @@
-          <!-- partial:partials/_footer.html -->
-          <footer class="footer">
-            <div class="container-fluid clearfix">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © Fundación Universitaria Compensar</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Desarrollado por <a href="https://github.com/jsalonl" target="_blank">Salomon Nieto</a></span>
-            </div>
-          </footer>
-          <!-- partial -->
-        </div>
-        <!-- main-panel ends -->
+<div class="footer">
+  <div class="container">
+    <div class="row align-items-center no-gutters border-top py-2">
+      <!-- Desc -->
+      <div class="col-md-6 col-12 text-center text-md-left">
+        <span>UCompensar&copy; <?php echo date('Y') ?>. Todos los derechos reservados.</span>
       </div>
-      <!-- page-body-wrapper ends -->
+        <!-- Links -->
+      <div class="col-12 col-md-6">
+        <nav class="nav nav-footer justify-content-center justify-content-md-end">
+          <a class="nav-link active pl-0" href="#!">Pol&iacute;ticas de privacidad</a>
+          <a class="nav-link" href="#!">Soporte</a>
+        </nav>
+      </div>
     </div>
-    <!-- container-scroller -->
-    </body>
-  
+  </div>
+</div>
+ 

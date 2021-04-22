@@ -2,61 +2,62 @@
     //Modulos Fijos Superiores
     include('views/head.php');
   ?>
-  <div class="container-scroller">
-      <div class="container-fluid page-body-wrapper full-page-wrapper">
-        <div class="content-wrapper d-flex align-items-center auth auth-bg-1 theme-one">
-          <div class="row w-100">
-            <div class="col-lg-4 mx-auto">
-              <div class="auto-form-wrapper">
-                <div class="pb-5">
-                  <img src="views/assets/images/logo.jpg" width="100%">
-                </div>
-                <?php $this->showMessages();?>
-                <!-- Formulario -->
-                <form action="<?php echo constant('URL');?>/login/authenticate" method="post">
-                  
-                  <div class="form-group">
-                    <label for="Correo">Correo Institucional</label>
-                    <div class="input-group">
-                      <input type="email" name="correo" id="correo" class="form-control" required>
-                      <div class="input-group-append">
-                        <span class="input-group-text">
-                          <i class="mdi mdi-check-circle-outline"></i>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="password">Contraseña</label>
-                    <div class="input-group">
-                      <input type="password" name="password" id="password" class="form-control" required>
-                      <div class="input-group-append">
-                        <span class="input-group-text">
-                          <i class="mdi mdi-check-circle-outline"></i>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <button type="submit" class="btn btn-primary submit-btn btn-block">Iniciar Sesión</button>
-                  </div>
-                  <div class="text-block text-center my-3">
-                    <span class="font-weight-semibold">¿No es miembro?</span>
-                    <a href="<?php echo constant('URL')?>/signup" class="text-primary">Registrese</a>
-                  </div>
-                </form>
-                <!-- Formulario -->
-              </div>
-              <p class="footer-text text-center">UCompensar &copy; <?php echo date('Y')?>. Todos los derechos reservados.</p>
-            </div>
-          </div>
-        </div>
-        <!-- content-wrapper ends -->
-      </div>
-      <!-- page-body-wrapper ends -->
-    </div>
-    <!-- container-scroller -->
-  <?php
+  <body class="bg-dark">
+	<!-- Page content -->
+	<div class="container d-flex flex-column">
+		<div class="row align-items-center justify-content-center no-gutters min-vh-100">
+			<div class="col-lg-5 col-md-8 py-8 py-xl-0">
+				<!-- Card -->
+				<div class="card shadow mt-4">
+					<!-- Card body -->
+					<div class="card-body p-6">
+            <?php $this->showMessages();?>
+						<div class="mb-4">
+							<a href="#"><img src="views/assets/images/brand/logo/logo.jpg" class="mb-4" alt="" /></a>
+							<h1 class="mb-1 font-weight-bold">Ingrese</h1>
+							<span>No tiene cuenta?
+								<a href="./signup" class="ml-1">Reg&iacute;strese</a></span>
+						</div>
+						<!-- Form -->
+						<form action="<?php echo constant('URL');?>/login/authenticate" method="post">
+              <!-- Email -->
+							<div class="form-group">
+								<label for="correo" class="form-label">Correo</label>
+								<input type="correo" id="correo" class="form-control" name="correo" placeholder="Correo universitario"
+									required />
+							</div>
+              <!-- Password -->
+							<div class="form-group">
+								<label for="password" class="form-label">Password</label>
+								<input type="password" id="password" class="form-control" name="password" placeholder="**************"
+									required />
+							</div>
+              <!-- Checkbox -->
+							<!--<div class="form-group">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="agreeCheck" />
+									<label class="custom-control-label" for="agreeCheck"><span>I agree to the <a href="terms-condition-page.html">Terms of
+												Service </a>and
+											<a href="terms-condition-page.html">Privacy Policy.</a></span></label>
+								</div>
+							</div>-->
+							<div>
+                <!-- Button -->
+								<button type="submit" class="btn btn-primary btn-block">
+									Crear cuenta
+								</button>
+							</div>
+							<hr class="my-4" />
+							<div class="mt-4 text-center">
+								<a href="https://ucompensar.edu.co" target="_blank">UCompensar&copy;</a> - Todos los derechos reservados
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<?php
   include('views/scripts.php');
-  ?>
-  
+?>

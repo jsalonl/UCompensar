@@ -9,13 +9,14 @@ class Login extends SessionController{
   function render(){
     $this->view->render('login/index');
   }
+
   function authenticate(){
     if($this->existPOST(['correo','password'])){
       $correo = $this->getPost('correo');
       $password = $this->getPost('password');
 
       if($correo == '' || empty($correo) || $password == '' || empty($password)){
-        $this->redirect('', ['error' => ErrorMessages::ERROR_LOGIN_AUTHENTICATE_EMPTY]);
+        $this->redirect('', ['error' => ErrorMessages::ERROR_LOGIN_AUTHENTICATE_EMPTY]);     
       }else{
         $user = $this->model->login($correo, $password);
 

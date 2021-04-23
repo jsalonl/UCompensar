@@ -1804,3 +1804,197 @@
 [22-Apr-2021 10:46:21 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/signup, url => signup
 [22-Apr-2021 10:46:21 America/Bogota] sessionController::isPublic(): currentURL => signup
 [22-Apr-2021 10:46:21 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:06:13 America/Bogota] App::construct-> No hay controlador especificado
+[23-Apr-2021 11:06:13 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:06:13 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/, url => 
+[23-Apr-2021 11:06:13 America/Bogota] sessionController::isPublic(): currentURL => 
+[23-Apr-2021 11:06:13 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:06:13 America/Bogota] Login::construct-> Inicio de Login
+[23-Apr-2021 11:06:20 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:06:20 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/login/authenticate, url => login
+[23-Apr-2021 11:06:20 America/Bogota] sessionController::isPublic(): currentURL => login
+[23-Apr-2021 11:06:20 America/Bogota] SessionController::validateSession() redirect al login
+[23-Apr-2021 11:06:20 America/Bogota] Login::construct-> Inicio de Login
+[23-Apr-2021 11:06:20 America/Bogota] Conexión a BD exitosa
+[23-Apr-2021 11:06:20 America/Bogota] LoginModel::login->success
+[23-Apr-2021 11:06:20 America/Bogota] sessionController::initialize(): user: 1121892890
+[23-Apr-2021 11:06:20 America/Bogota] sessionController::authorizeAccess(): role: Estudiante
+[23-Apr-2021 11:06:20 America/Bogota] App::construct-> No hay controlador especificado
+[23-Apr-2021 11:06:20 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:06:20 America/Bogota] Conexión a BD exitosa
+[23-Apr-2021 11:06:20 America/Bogota] sessionController::getUserSessionData(): 1121892890
+[23-Apr-2021 11:06:20 America/Bogota] sessionController::validateSession(): identificacion:1121892890 - role: Estudiante
+[23-Apr-2021 11:06:20 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/, url => 
+[23-Apr-2021 11:06:20 America/Bogota] sessionController::isPublic(): currentURL => 
+[23-Apr-2021 11:06:20 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[23-Apr-2021 11:06:20 America/Bogota] Login::construct-> Inicio de Login
+[23-Apr-2021 11:06:20 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:06:20 America/Bogota] Conexión a BD exitosa
+[23-Apr-2021 11:06:20 America/Bogota] sessionController::getUserSessionData(): 1121892890
+[23-Apr-2021 11:06:20 America/Bogota] sessionController::validateSession(): identificacion:1121892890 - role: Estudiante
+[23-Apr-2021 11:06:20 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/dashboard, url => dashboard
+[23-Apr-2021 11:06:20 America/Bogota] sessionController::isPublic(): currentURL => dashboard
+[23-Apr-2021 11:06:20 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/dashboard, url => dashboard
+[23-Apr-2021 11:06:20 America/Bogota] SessionController::validateSession() => autorizado, lo deja pasar
+[23-Apr-2021 11:06:20 America/Bogota] Conexión a BD exitosa
+[23-Apr-2021 11:06:20 America/Bogota] sessionController::getUserSessionData(): 1121892890
+[23-Apr-2021 11:06:20 America/Bogota] Dashboard::construct-> Inicio de Dashboard
+[23-Apr-2021 11:06:20 America/Bogota] Dashboard::render-> Carga dashboard
+[23-Apr-2021 11:07:27 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:07:27 America/Bogota] Conexión a BD exitosa
+[23-Apr-2021 11:07:27 America/Bogota] sessionController::getUserSessionData(): 1121892890
+[23-Apr-2021 11:07:27 America/Bogota] sessionController::validateSession(): identificacion:1121892890 - role: Estudiante
+[23-Apr-2021 11:07:27 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/logout, url => logout
+[23-Apr-2021 11:07:27 America/Bogota] sessionController::isPublic(): currentURL => logout
+[23-Apr-2021 11:07:27 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/logout, url => logout
+[23-Apr-2021 11:07:27 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[23-Apr-2021 11:07:27 America/Bogota] App::construct-> No hay controlador especificado
+[23-Apr-2021 11:07:27 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:07:27 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/, url => 
+[23-Apr-2021 11:07:27 America/Bogota] sessionController::isPublic(): currentURL => 
+[23-Apr-2021 11:07:27 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:07:27 America/Bogota] Login::construct-> Inicio de Login
+[23-Apr-2021 11:07:30 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:07:30 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/signup, url => signup
+[23-Apr-2021 11:07:30 America/Bogota] sessionController::isPublic(): currentURL => signup
+[23-Apr-2021 11:07:30 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:08:01 America/Bogota] App::construct-> No hay controlador especificado
+[23-Apr-2021 11:08:01 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:08:01 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/, url => 
+[23-Apr-2021 11:08:01 America/Bogota] sessionController::isPublic(): currentURL => 
+[23-Apr-2021 11:08:01 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:08:01 America/Bogota] Login::construct-> Inicio de Login
+[23-Apr-2021 11:08:32 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:08:32 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:08:32 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:08:32 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:08:32 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:08:32 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:08:32 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:08:32 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:08:32 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:08:32 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:08:54 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:08:54 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/login/authenticate, url => login
+[23-Apr-2021 11:08:54 America/Bogota] sessionController::isPublic(): currentURL => login
+[23-Apr-2021 11:08:54 America/Bogota] SessionController::validateSession() redirect al login
+[23-Apr-2021 11:08:54 America/Bogota] Login::construct-> Inicio de Login
+[23-Apr-2021 11:08:54 America/Bogota] Conexión a BD exitosa
+[23-Apr-2021 11:08:54 America/Bogota] LoginModel::login->success
+[23-Apr-2021 11:08:54 America/Bogota] sessionController::initialize(): user: 1121892890
+[23-Apr-2021 11:08:54 America/Bogota] sessionController::authorizeAccess(): role: Estudiante
+[23-Apr-2021 11:08:54 America/Bogota] App::construct-> No hay controlador especificado
+[23-Apr-2021 11:08:54 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:08:54 America/Bogota] Conexión a BD exitosa
+[23-Apr-2021 11:08:54 America/Bogota] sessionController::getUserSessionData(): 1121892890
+[23-Apr-2021 11:08:54 America/Bogota] sessionController::validateSession(): identificacion:1121892890 - role: Estudiante
+[23-Apr-2021 11:08:54 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/, url => 
+[23-Apr-2021 11:08:54 America/Bogota] sessionController::isPublic(): currentURL => 
+[23-Apr-2021 11:08:54 America/Bogota] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[23-Apr-2021 11:08:54 America/Bogota] Login::construct-> Inicio de Login
+[23-Apr-2021 11:08:54 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:08:54 America/Bogota] Conexión a BD exitosa
+[23-Apr-2021 11:08:54 America/Bogota] sessionController::getUserSessionData(): 1121892890
+[23-Apr-2021 11:08:54 America/Bogota] sessionController::validateSession(): identificacion:1121892890 - role: Estudiante
+[23-Apr-2021 11:08:54 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/dashboard, url => dashboard
+[23-Apr-2021 11:08:54 America/Bogota] sessionController::isPublic(): currentURL => dashboard
+[23-Apr-2021 11:08:54 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/dashboard, url => dashboard
+[23-Apr-2021 11:08:54 America/Bogota] SessionController::validateSession() => autorizado, lo deja pasar
+[23-Apr-2021 11:08:54 America/Bogota] Conexión a BD exitosa
+[23-Apr-2021 11:08:54 America/Bogota] sessionController::getUserSessionData(): 1121892890
+[23-Apr-2021 11:08:54 America/Bogota] Dashboard::construct-> Inicio de Dashboard
+[23-Apr-2021 11:08:54 America/Bogota] Dashboard::render-> Carga dashboard
+[23-Apr-2021 11:08:55 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:08:55 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:08:55 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:08:55 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:08:55 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:08:55 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:08:55 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:08:55 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:08:55 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:08:55 America/Bogota] Errores::construct-> Inicio de errores
+[23-Apr-2021 11:09:19 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:09:19 America/Bogota] Conexión a BD exitosa
+[23-Apr-2021 11:09:19 America/Bogota] sessionController::getUserSessionData(): 1121892890
+[23-Apr-2021 11:09:19 America/Bogota] sessionController::validateSession(): identificacion:1121892890 - role: Estudiante
+[23-Apr-2021 11:09:19 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/logout, url => logout
+[23-Apr-2021 11:09:19 America/Bogota] sessionController::isPublic(): currentURL => logout
+[23-Apr-2021 11:09:19 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/logout, url => logout
+[23-Apr-2021 11:09:19 America/Bogota] SessionController::validateSession() => no autorizado, redirige al main de cada rol
+[23-Apr-2021 11:09:19 America/Bogota] App::construct-> No hay controlador especificado
+[23-Apr-2021 11:09:19 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:09:19 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/, url => 
+[23-Apr-2021 11:09:19 America/Bogota] sessionController::isPublic(): currentURL => 
+[23-Apr-2021 11:09:19 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:09:19 America/Bogota] Login::construct-> Inicio de Login
+[23-Apr-2021 11:51:13 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:51:13 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/signup, url => signup
+[23-Apr-2021 11:51:13 America/Bogota] sessionController::isPublic(): currentURL => signup
+[23-Apr-2021 11:51:13 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:51:28 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:51:28 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/signup/newUser, url => signup
+[23-Apr-2021 11:51:28 America/Bogota] sessionController::isPublic(): currentURL => signup
+[23-Apr-2021 11:51:28 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:51:28 America/Bogota] Conexión a BD exitosa
+[23-Apr-2021 11:51:28 America/Bogota] Conexión a BD exitosa
+[23-Apr-2021 11:51:28 America/Bogota] App::construct-> No hay controlador especificado
+[23-Apr-2021 11:51:28 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:51:28 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/?success=s_s_nu_2021_200, url => ?success=s_s_nu_2021_200
+[23-Apr-2021 11:51:28 America/Bogota] sessionController::isPublic(): currentURL => ?success=s_s_nu_2021_200
+[23-Apr-2021 11:51:28 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:51:28 America/Bogota] Login::construct-> Inicio de Login
+[23-Apr-2021 11:52:44 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:52:44 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/signup, url => signup
+[23-Apr-2021 11:52:44 America/Bogota] sessionController::isPublic(): currentURL => signup
+[23-Apr-2021 11:52:44 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:55:48 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:55:48 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/signup/newUser, url => signup
+[23-Apr-2021 11:55:48 America/Bogota] sessionController::isPublic(): currentURL => signup
+[23-Apr-2021 11:55:48 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:55:48 America/Bogota] App::construct-> No hay controlador especificado
+[23-Apr-2021 11:55:48 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:55:48 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/?error=e_u_ne_2021_400, url => ?error=e_u_ne_2021_400
+[23-Apr-2021 11:55:48 America/Bogota] sessionController::isPublic(): currentURL => ?error=e_u_ne_2021_400
+[23-Apr-2021 11:55:48 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:55:48 America/Bogota] Login::construct-> Inicio de Login
+[23-Apr-2021 11:56:43 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:56:43 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/signup, url => signup
+[23-Apr-2021 11:56:43 America/Bogota] sessionController::isPublic(): currentURL => signup
+[23-Apr-2021 11:56:43 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:56:50 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:56:50 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/signup/newUser, url => signup
+[23-Apr-2021 11:56:50 America/Bogota] sessionController::isPublic(): currentURL => signup
+[23-Apr-2021 11:56:50 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:56:50 America/Bogota] App::construct-> No hay controlador especificado
+[23-Apr-2021 11:56:50 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:56:50 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/?error=e_u_ne_2021_400, url => ?error=e_u_ne_2021_400
+[23-Apr-2021 11:56:50 America/Bogota] sessionController::isPublic(): currentURL => ?error=e_u_ne_2021_400
+[23-Apr-2021 11:56:50 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:56:50 America/Bogota] Login::construct-> Inicio de Login
+[23-Apr-2021 11:57:32 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:57:32 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/signup, url => signup
+[23-Apr-2021 11:57:32 America/Bogota] sessionController::isPublic(): currentURL => signup
+[23-Apr-2021 11:57:32 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:57:36 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:57:36 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/signup/newUser, url => signup
+[23-Apr-2021 11:57:36 America/Bogota] sessionController::isPublic(): currentURL => signup
+[23-Apr-2021 11:57:36 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:57:36 America/Bogota] App::construct-> No hay controlador especificado
+[23-Apr-2021 11:57:36 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:57:36 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/?error=e_s_eu_2021_400, url => ?error=e_s_eu_2021_400
+[23-Apr-2021 11:57:36 America/Bogota] sessionController::isPublic(): currentURL => ?error=e_s_eu_2021_400
+[23-Apr-2021 11:57:36 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:57:36 America/Bogota] Login::construct-> Inicio de Login
+[23-Apr-2021 11:57:51 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:57:51 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/signup, url => signup
+[23-Apr-2021 11:57:51 America/Bogota] sessionController::isPublic(): currentURL => signup
+[23-Apr-2021 11:57:51 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:57:55 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:57:55 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/signup/newUser, url => signup
+[23-Apr-2021 11:57:55 America/Bogota] sessionController::isPublic(): currentURL => signup
+[23-Apr-2021 11:57:55 America/Bogota] SessionController::validateSession() public page
+[23-Apr-2021 11:57:55 America/Bogota] SessionController::validateSession()
+[23-Apr-2021 11:57:55 America/Bogota] sessionController::getCurrentPage(): actualLink =>/ucompensar/signup?error=e_s_eu_2021_400, url => signup?error=e_s_eu_2021_400
+[23-Apr-2021 11:57:55 America/Bogota] sessionController::isPublic(): currentURL => signup?error=e_s_eu_2021_400
+[23-Apr-2021 11:57:55 America/Bogota] SessionController::validateSession() public page

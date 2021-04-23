@@ -5,7 +5,8 @@ class ErrorMessages{
   const ERROR_SIGNUP_POST = "e_s_p_2021_400";
   const ERROR_SIGNUP_NEWUSER = "e_s_nu_2021_400";
   const ERROR_SIGNUP_NEWUSER_EMPTY = "e_s_nu_e_2021_400";
-  const ERROR_SIGNUP_NEWUSER_EXISTS = "e_u_ne_2021_400";
+  const ERROR_SIGNUP_NEWUSER_EXISTS = "e_s_ne_2021_400";
+  const ERROR_SIGNUP_EMAIL_UNIVERSITY = "e_s_eu_2021_400";
   const ERROR_LOGIN_AUTHENTICATE_POST = "e_l_a_p_2021_400";
   const ERROR_LOGIN_AUTHENTICATE_EMPTY = "e_l_a_e_2021_400";
   const ERROR_LOGIN_AUTHENTICATE_DATA = "e_l_a_d_2021_400";
@@ -19,6 +20,7 @@ class ErrorMessages{
       ErrorMessages::ERROR_SIGNUP_POST=>'No se recibieron datos post',
       ErrorMessages::ERROR_SIGNUP_NEWUSER=>'Hubo un error al intentar procesar la solicitud',
       ErrorMessages::ERROR_SIGNUP_NEWUSER_EMPTY=>'Llene los campos solicitados',
+      ErrorMessages::ERROR_SIGNUP_EMAIL_UNIVERSITY=>'Debe usar un correo de la universidad Compensar',
       ErrorMessages::ERROR_SIGNUP_NEWUSER_EXISTS=>'La identificacion del usuario ya esta en sistema',
       ErrorMessages::ERROR_LOGIN_AUTHENTICATE_POST=>'No se recibieron datos post',
       ErrorMessages::ERROR_LOGIN_AUTHENTICATE_EMPTY=>'Llene los campos de usuario y password',

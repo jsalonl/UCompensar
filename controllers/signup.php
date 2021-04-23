@@ -12,6 +12,15 @@ class SignUp extends SessionController{
     $this->view->render('login/signup', []);
 
   }
+  
+  //Valida Correo de la universidad
+  function validateMail($mail){
+    $mail = explode("@", $mail);
+    $dominio = $mail[1];
+    if($dominio!="ucompensar.edu.co"){
+      return true;
+    }
+  }
 
   function newUser(){
     if($this->existPOST(['identificacion', 'nombre', 'correo', 'telefono', 'password'])){
@@ -24,7 +33,9 @@ class SignUp extends SessionController{
         
         //validate data
         if($identificacion == '' || empty($identificacion) || $nombre == '' || empty($nombre) || $correo == '' || empty($correo)  || $telefono == '' || empty($telefono) || $password == '' || empty($password)){
-            $this->redirect('signup', ['error' => ErrorMessages::ERROR_SIGNUP_NEWUSER_EMPTY]);
+          $this->redirect('signup', ['error' => ErrorMessages::ERROR_SIGNUP_NEWUSER_EMPTY]);
+        }else if($this->validateMail($correo)){
+          $this->redirect('signup', ['error' => ErrorMessages::ERROR_SIGNUP_EMAIL_UNIVERSITY]);
         }else{
           $user = new UserModel();
           $user->setVid($identificacion);
@@ -52,6 +63,8 @@ class SignUp extends SessionController{
         $this->redirect('signup', ['error' => ErrorMessages::ERROR_SIGNUP_POST]);
     }
   }
+
+  
 
 }
 
